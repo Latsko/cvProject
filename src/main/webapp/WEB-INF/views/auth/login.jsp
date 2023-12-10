@@ -21,29 +21,21 @@
               <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-4">Witaj !</h1>
+                    <h1 class="h4 text-gray-900 mb-4">Hello!</h1>
                   </div>
                   <form class="user" method="post" action='<c:url value="/login"/>'>
                     <div class="form-group">
-                      <input type="text" class="form-control form-control-user" name="username" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Wprowadź swój adres Email...">
+                      <input type="text" class="form-control form-control-user" name="username" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter your address or Email...">
                     </div>
                     <div class="form-group">
-                      <input type="password" class="form-control form-control-user" name="password" id="exampleInputPassword" placeholder="Hasło">
+                      <input type="password" class="form-control form-control-user" name="password" id="exampleInputPassword" placeholder="Password">
                     </div>
-                    <div class="form-group">
-                      <div class="custom-control custom-checkbox small">
-                        <input type="checkbox" class="custom-control-input" id="customCheck">
-                        <label class="custom-control-label" for="customCheck">Zapamiętaj mnie</label>
-                      </div>
-                    </div>
-                    <input type="submit" value="Login" class="btn btn-primary btn-user btn-block"/>
+
+                    <input type="submit" value="Login" class="btn btn-warning"/>
 
                     <hr>
                   
                   </form>
-                  <div class="text-center">
-                    <a class="small" href="#">Utwórz konto!</a>
-                  </div>
                 </div>
               </div>
             </div>

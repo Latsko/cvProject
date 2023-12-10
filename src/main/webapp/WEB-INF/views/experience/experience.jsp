@@ -1,4 +1,4 @@
-
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ page contentType="text/html; charset=UTF-8" %>
@@ -21,12 +21,17 @@
                     <div class="subheading mb-3">${experience.company}</div>
                     <p>${experience.description}</p>
                 </div>
-                <div class="flex-shrink-0"><span class="text-primary">${experience.dateFrom} - ${experience.dateTo}</span></div>
+                <div class="flex-shrink-0">
+                    <span class="text-primary">
+                        <fmt:formatDate pattern="yyyy-MM-dd" value="${experience.dateFrom}"/> -
+                        <fmt:formatDate pattern="yyyy-MM-dd" value="${experience.dateTo}"/></span>
+                </div>
 
             </div>
+                <security:authorize access="hasAnyRole('ADMIN')">
                 <a href='<c:url value="/experience/editExperience/${experience.id}"/>'
                    class="btn-right btn btn-primary" role="button">Edit</a>
-
+                </security:authorize>
                 <br />
                 <br />
                 <br />
@@ -35,7 +40,7 @@
         </div>
     </section>
     <%----------------------------------------------------------------------------------------%>
-
+<security:authorize access="hasAnyRole('ADMIN')">
     <form method="post" action='<c:url value="/experience"/>'>
         <section class="resume-section" id="experience">
             <div class="resume-section-content">
@@ -117,6 +122,7 @@
         </section>
 
     </form>
+</security:authorize>
 </div>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

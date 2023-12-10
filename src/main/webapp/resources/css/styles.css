@@ -3032,7 +3032,7 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #000;
-  background-color: #bd5d38;
+  background-color: #FFA836;
   border-color: #bd5d38;
 }
 .btn-primary:hover {
@@ -11355,6 +11355,7 @@ p.lead {
     flex-direction: column;
     width: 17rem;
     height: 100vh;
+    background-image: linear-gradient(180deg, #FFA836 10%, #bd5d38 100%);
   }
   #sideNav .navbar-brand {
     display: flex;
@@ -11405,6 +11406,10 @@ p.lead {
 
 .dev-icons {
   font-size: 3rem;
+}
+
+.button-next-to-edit {
+  display: flex;
 }
 
 section.resume-section {

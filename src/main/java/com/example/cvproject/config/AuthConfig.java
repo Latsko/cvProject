@@ -40,8 +40,7 @@ public class AuthConfig {
     @Bean
     protected SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests()
-                .antMatchers("/experience").hasAnyRole("USER")
-                .antMatchers("/exprience").hasAnyRole("ADMIN")
+                .antMatchers("/experience/**", "/education", "/skills", "/interests").hasAnyRole("USER", "ADMIN")
                 .antMatchers("/").permitAll()
                 .and()
                 .csrf().disable()
