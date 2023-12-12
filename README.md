@@ -10,8 +10,8 @@ Additionally, it uses Spring Security to provide authentication, authorization a
    - Education
    - Experience
    - Interests
-### Predefined skillset represented by icons that can be removed
-### Simple Authentication and authorization for user and admin
+ Predefined skillset represented by icons that can be removed
+ Simple Authentication and authorization for user and admin
 
 ## Technologies Used
 <div align="center">
