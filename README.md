@@ -1,7 +1,7 @@
 # CV Internet Page
 
 ## Overview
-### This repository contains simple prototype of CV site using spring framework flow and Bootstrap template for front-end. 
+### This repository contains simple prototype of CV site using Spring Framework flow and Bootstrap template for front-end. 
 It provides tools for reading(from user perspective) and creating, removal and updating data(from admin perspective).
 Additionally, it uses Spring Security to provide authentication, authorization and edit for profile information.
 
