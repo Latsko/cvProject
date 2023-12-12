@@ -29,7 +29,7 @@
                     <hr>
                     <div class="form-group">
                         <textarea type="text" class="form-control" rows="5" name="description"
-                                  placeholder="dodaj nową treść"></textarea>
+                                  placeholder="add new contents"></textarea>
                     </div>
                 </br>
                     <input type="submit" class="btn btn-primary" value="Save"/>
