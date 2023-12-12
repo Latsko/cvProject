@@ -11,7 +11,7 @@ Additionally, it uses Spring Security to provide authentication, authorization a
    - Experience
    - Interests
      
- Predefined skillset represented by icons that can be removed
+ Predefined skillset represented by icons that can be edited
  
  Simple Authentication and authorization for user and admin
 
