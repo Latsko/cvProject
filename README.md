@@ -1,4 +1,4 @@
-# CV Internet Page
+# CV Internet App
 
 ## Overview
 ### This repository contains simple prototype of CV site using Spring Framework flow and Bootstrap template for front-end. 
